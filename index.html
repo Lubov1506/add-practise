@@ -4,22 +4,104 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script defer src="./js/task-11-15.js"></script>
+    <script defer src="./js/task-16-21.js"></script>
   </head>
   <body>
-    <form>
-      <textarea
-        name=""
-        id="user-text"
-        cols="30"
-        rows="10"
-        style="resize: none"
-      ></textarea>
-      <button type="submit">Check</button>
-    </form>
-    <p class="info"></p>
+    <!-- #region task-12 -->
+    <h3>task-12</h3>
+    <label for="user-input">Введіть текст</label>
+    <input id="user-input" />
+    <button type="button" onclick="checkUserInput()">Перевірити</button>
+    <p id="res"></p>
+    <!-- #endregion task-12 -->
+    <hr />
+
+    <!-- #region task-13 -->
+    <h3>task-13</h3>
+    <label for="num-input">Введіть будь-яке число</label>
+    <input type="number" id="num-input" />
+    <button type="button" onclick="checkNumInput()">Перевірити</button>
+    <p id="num-check-res"></p>
+    <!-- #endregion task-13 -->
+    <hr />
+
+    <!-- #region task-14 -->
+    <h3>task-14</h3>
+
+    <label for="user-name-input">Name</label>
+    <input type="text" name="user-name" id="user-name-input" /><br />
+    <label for="user-email-input">Email</label>
+    <input type="email" name="user-email" id="user-email-input" /><br />
+    <label for="user-password-input">Password</label>
+    <input type="password" name="user-password" id="user-password-input" />
+    <br />
+    <button type="button" onclick="checkUserInfo()">check</button>
+    <span id="check-info-res"></span>
+
+    <!-- #endregion task-14 -->
+    <hr />
+
+    <!-- #region task-15 -->
+    <h3>task-15</h3>
+    <label for="user-day-input">Введіть назву дня тижня</label>
+    <input type="text" id="user-day-input" />
+    <button type="button" onclick="checkDayOfWeek()">
+      Вихідний чи робочий?
+    </button>
+    <p id="check-day-res"></p>
+    <!-- #endregion task-15 -->
+    <hr />
+
+    <!-- #region task-16 -->
+    <h3>task-16</h3>
+    <label for="month-input">Type month number</label>
+    <input type="number" id="month-input" />
+    <br />
+    <button type="button" onclick="getSeason()">Check season</button
+    ><span id="season-res"></span>
+    <!-- #endregion task-16 -->
+    <hr />
+
+    <!-- #region task-17 -->
+    <h3>task-17</h3>
+    <label for="month-days-input">Type month number</label>
+    <input type="number" id="month-days-input" />
+    <span id="quantity-days-res"></span> <br />
+    <button type="button" onclick="getQuantityDays()">
+      Show quantity days
+    </button>
+    <!-- #endregion task-17 -->
+    <hr />
+
+    <!-- #region task-18 -->
+    <h3>task-18</h3>
+    <label for="input-color">Введіть колір: червоний, жовтий або зелений</label>
+    <input type="text" id="input-color" /> <span id="color-res"></span> <br />
+    <button type="button" onclick="getColorRes()">Побачити результат</button>
+    <!-- #endregion task-18 -->
+    <hr />
+
+    <!-- #region task-19 -->
+    <h3>task-19</h3>
+    <label for="input-number-first">Введіть перше число</label>
+    <input type="number" id="input-number-first" />
+    <label for="input-number-second">Введіть друге число</label>
+    <input type="number" id="input-number-second" />
+    <label for="calc-operation">Виберіть арифметичну операцію</label>
+    <select name="operation" id="calc-operation">
+      <option value="+" selected>+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <button type="button" onclick="getCalcRes()">Порахувати</button>
+    <p id="calc-res"></p>
+    <!-- #endregion task-19 -->
+
     <!-- <script type="module" src="./js/task-1-5.js"></script> -->
     <!-- <script type="module" src="./js/task-6-10.js"></script> -->
-    <script type="module" src="./js/task-11-15.js"></script>
+
     <!-- <script type="module" src="./js/task-16-21.js"></script> -->
   </body>
 </html>
